@@ -1,7 +1,7 @@
 {
-  "name": "Ficha Técnica de Medición",
-  "short_name": "FichaMedición",
-  "description": "App para registrar fichas técnicas de variables y equipos de medición en cuevas",
+  "name": "Ficharium",
+  "short_name": "Ficharium",
+  "description": "App offline para fichas de exploración de cuevas y medición de radón",
   "start_url": "./",
   "display": "standalone",
   "orientation": "portrait",
@@ -10,22 +10,10 @@
   "lang": "es",
   "icons": [
     {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
+      "src": "icons/icon-ficharium.png",
+      "sizes": "1254x1254",
       "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ],
   "categories": ["utilities", "productivity"],

@@ -1,23 +1,39 @@
-# Ficha Técnica de Medición
+# Fichas de campo: Cuevas y Radón
 
-App móvil para registrar variables y equipos de medición en cuevas. Funciona **100% offline** una vez instalada — sin conexión a internet, sin servidores, sin cuentas.
+App móvil para registrar mediciones de cuevas y radón. Funciona **100% offline** una vez instalada — sin conexión a internet, sin servidores, sin cuentas.
 
-🔗 **[Abrir la app](https://hernanx21.github.io/pdf-form-maker)**
+🔗 **[Abrir la app](https://hernanx21.github.io/offline-pdf-maker/)**
 
 ---
 
 ## ¿Qué hace?
 
-Permite crear y gestionar **fichas técnicas de campo** con la siguiente información:
+Al iniciar, elige entre dos colecciones locales de fichas:
+
+- **Cuevas:** conserva el formulario de medición existente.
+- **Radón:** reúne datos generales obligatorios, características de la vivienda con esquemas del nivel respecto al terreno y datos del electreto y la medición; las coordenadas se pueden editar u obtener desde el GPS.
+
+Cada colección mantiene su propia lista y permite exportar PDF y JSON.
+
+La ficha de Cuevas incluye:
 
 | Sección | Contenido |
 |---|---|
-| **1. Detalles de cueva** | Nombre, punto, fecha, horario, presencia y tipo de agua, sección transversal |
+| **1. Detalles de cueva** | Nombre, provincia y cantón manuales, punto, fecha, horario, presencia y tipo de agua, sección transversal |
 | **2. Parámetros ambientales** | Humedad, temperatura, presión, velocidad del viento, CO₂ |
-| **3. Equipos de radiación ionizante** | AlphaE, GammaScout, GMQ-GMC+600, Dosímetros, Sonda Beta |
-| **4. Equipos adicionales** | Medidor de radiación cósmica |
+| **3. Equipos de radiación ionizante** | AlphaE, GammaScout, Dosímetros, SaphyRAD y selección de sonda (Sin sonda, AB16 o GSP145) |
+| **4. Equipos adicionales** | Medidor de radiación cósmica y campo para otro equipo |
 | **5. Observaciones** | Notas libres de campo |
 | **Fotografías** | Fotos adjuntas almacenadas junto a la ficha |
+
+La ficha de Radón incluye:
+
+| Sección | Contenido |
+|---|---|
+| **1. Datos Generales** | Identificación, ubicación territorial, código de casa, número de cuadra y coordenadas GPS |
+| **2. Datos de la vivienda** | Tipología, posición del piso más bajo con esquema, año, terrenos, materiales, climatización, humedad, grietas y uso del sótano o piso semienterrado |
+| **3. Datos de medición** | Electreto, fechas, horas, voltajes, tipo de espacio y piso de medición |
+| **4–5** | Equipos adicionales de medición de radiación ionizante (AlphaE, GammaScout y SaphyRAD), observaciones y fotografías |
 
 Cada ficha se puede exportar a **PDF** (formato que replica la ficha Excel original) o a **JSON** para respaldo y transferencia entre dispositivos.
 
@@ -46,9 +62,10 @@ La app se puede instalar como una app nativa desde el navegador — sin pasar po
 ## Uso básico
 
 ### Crear una ficha
-1. Toca el botón **+** en la pantalla principal
-2. Completa las secciones del formulario (los campos con * son requeridos: Cueva, Punto y Fecha)
-3. Los datos se guardan automáticamente mientras escribís — no hay botón "Guardar"
+1. Elige **Cuevas** o **Radón** en la pantalla inicial.
+2. Toca el botón **+** en la lista correspondiente.
+3. Completa las secciones del formulario. En Radón, puedes escribir las coordenadas o usar el GPS; los campos marcados con `*` son obligatorios para exportar el PDF.
+4. Los datos se guardan automáticamente mientras escribís — no hay botón "Guardar"
 
 ### Navegar las secciones
 Cada sección es un panel colapsable. Toca el encabezado para expandirla o cerrarla.
@@ -75,9 +92,10 @@ Toca **"Exportar PDF"** al final del formulario, o desde la lista de fichas en e
 
 ## Pantalla principal
 
-Desde el **home** podés:
-- Ver todas las fichas creadas (ordenadas por última modificación)
-- Ver el estado de cada ficha: **✓ Completa** (tiene cueva, punto y fecha) o **⏳ Parcial**
+Desde cada lista podés:
+- Ver las fichas de Cuevas o Radón (ordenadas por última modificación)
+- Volver al selector para cambiar de colección
+- Ver el estado de cada ficha: **✓ Completa** o **⏳ Parcial**
 - Abrir, exportar a PDF, exportar a JSON o eliminar cualquier ficha
 - Acceder al menú ⋮ para importar, exportar todas, instalar la app o limpiar datos
 
